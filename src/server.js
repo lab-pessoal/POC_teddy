@@ -15,6 +15,7 @@ app.get("/health", (_req, res) => {
   res.status(200).send("ok");
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`teddy-open-finance listening on port ${port}`);
 });
+
