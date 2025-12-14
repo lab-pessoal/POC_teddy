@@ -1,6 +1,12 @@
 name: teddy-openfinance
 on:
   workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+  
 jobs:
   call-workflow:
     uses: lab-pessoal/templates-pipeline/.github/workflows/pipeline-docker.yml@main
